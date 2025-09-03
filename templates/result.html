@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+    <head>
+        <title>Result</title>
+        <style>
+            .body{
+                background-color:cyan;
+            }
+            .graph {
+                
+                height: 800px;
+                width: 1500px;
+                background: url(data:image/jpeg;base64,{{data}}) no-repeat; 
+                background-position: center;
+                
+            }
+            .graph2 {
+                
+                height: 700px;
+                width: 1500px;
+                background: url(data:image/jpeg;base64,{{data2}}) no-repeat; 
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body class='body'>
+
+        <div class='graph2'></div>
+        <div class='graph'></div>
+        
+    </body>
+</html>
